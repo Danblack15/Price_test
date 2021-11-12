@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+    <title>Лицензии</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="plan">
+            <div class="select">
+                <ul>
+                    <li>
+                        <input type="radio" name="rad" id="rad_1"/>
+                        <label for="rad_1">licenseplan #1</label>
+                        <p>$<span>13</span> per license</p>
+                    </li>
+                    <li>
+                        <input type="radio" name="rad" id="rad_2"/>
+                        <label for="rad_2">licenseplan #2</label>
+                        <p>$<span>22</span> per license</p>
+                    </li>
+                    <li>
+                        <input type="radio" name="rad" id="rad_3"/>
+                        <label for="rad_3">licenseplan #3</label>
+                        <p>$<span>34</span> per license</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="number">
+                <label for="list">Number of licenses:</label>
+                <select name="kol">
+                    <option value="">1</option>
+                    <option value="">3</option>
+                    <option value="">7</option>
+                    <option value="">10</option>
+                </select>
+            </div>
+            <div class="submit">
+                <p>TOTAL: <span>$<span id="price">340</span></span></p>
+                <a href="#">buy now</a>
+                <p class="selected_plan">Selected plan: #<span>1</span></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
